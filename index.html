@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Image Generator</title>
+    <link rel="shortcut icon" href="asset/qrImage.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    
+    <div class="banner">
+        <div class="left-container">
+            <div class="qr-generator">
+                <h1>QR Code Generator</h1>
+                <p>Paste a text or url to generate QR.</p>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter a text or url" id="inputText">
+                    <i class="fa-solid fa-times" onclick="clearInput()"></i>
+                </div>
+                <div class="qrBox" id="qrBox">
+                    <img src="asset/qrImage.jpeg" width="100%" alt="qrImage" id="qrImage">
+                </div>
+                <button onclick="generateQR()">Generate QR</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <img src="asset/images.jpeg" alt="image">
+        </div>
+</div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
